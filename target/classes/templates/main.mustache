@@ -1,0 +1,20 @@
+<html>
+
+<body>
+<div>
+    <from method="post">
+        <input type="text" name="text" placeholder="write text" />
+        <input type="text" name="tag" placeholder="Tag" />
+        <button type="submit">Add</button>
+    </from>
+</div>
+<div>List Messages</div>
+    {{#messages}}
+        <div>
+        <b>{{id}}</b>
+        <span>{{test}}</span>
+        <i>{{tag}}</i>
+        </div>
+    {{/messages}}
+</body>
+</html>
