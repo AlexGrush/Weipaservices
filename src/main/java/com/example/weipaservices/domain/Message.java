@@ -1,4 +1,4 @@
-package com.example.weipaservices;
+package com.example.weipaservices.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

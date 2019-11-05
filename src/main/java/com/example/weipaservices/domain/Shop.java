@@ -7,12 +7,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 
 @Entity
-public class Jije {
+public class Shop {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String jijepname;
-    private String category;
-    private boolean hasNicotine;
-    private Long Price;
+    private String shopname;
+    private String address;
+    private boolean ElectroParlingAvailable;
 }
