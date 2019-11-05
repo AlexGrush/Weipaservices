@@ -1,6 +1,6 @@
 package com.example.weipaservices;
 
-import com.example.weipaservices.Message;
+import com.example.weipaservices.domain.Message;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
