@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div><form action="/shop" method="post">
+    <input type="text" name="shopname" placeholder="Введите название магазина" />
+    <input type="text" name="adress" placeholder="Адресс">
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">Добавить Магазин</button>
+</form>
+    {{#shops}}
+        <div>
+            <b>{{shop_id}}</b>
+            <span>{{shopname}}</span>
+            <span>{{address}}</span>
+        </div>
+    {{/shops}}
+</div>
+<a href="/shop">Shop page</a>
+</body>
+</html>

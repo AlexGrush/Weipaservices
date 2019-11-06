@@ -2,20 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e98076-8f1b-46fd-9d03-a6a95063c7a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/services/UserServices.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Purchase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/services/UserServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/MessageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/MessageRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/greeting.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Purchase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/GreetingController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/MessageRepo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/greeting.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,8 +37,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="HTML File" />
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -53,7 +59,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -117,6 +123,8 @@
       <workItem from="1572775264704" duration="5545000" />
       <workItem from="1572945453655" duration="1233000" />
       <workItem from="1572976711414" duration="9999000" />
+      <workItem from="1572987903992" duration="1871000" />
+      <workItem from="1573036965980" duration="15102000" />
     </task>
     <servers />
   </component>
@@ -138,5 +146,21 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java</url>
+          <line>79</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java</url>
+          <line>86</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
