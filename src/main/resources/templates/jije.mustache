@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div><form action="/jije" method="post">
+    <input type="text" name="jijepname" placeholder="Hазвание жижи" />
+    <input type="text" name="category" placeholder="Категории">
+    <input type="text" name="manufacture" placeholder="Производитель">
+    <input type="number" name="price" placeholder="Цена">
+    <label> Наличие никотина : <input type="checkbox"  name="hasNicotine"/> </label>
+
+    <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+    <button type="submit">Добавить</button>
+
+</form>
+    {{#jijes}}
+        <div>
+            <b>{{jije_id}}</b>
+            <span>{{jijepname}}</span>
+            <span>{{category}}</span>
+            <span>{{manufacture}}</span>
+            <span><{{price}}</span>
+            <span>{{hasNicotine}}</span>
+            </form>
+        </div>
+    {{/jijes}}
+</div>
+<a href="/shop">Shops page</a>
+</body>
+</html>

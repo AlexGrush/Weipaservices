@@ -3,11 +3,12 @@ package com.example.weipaservices.repos;
 import com.example.weipaservices.domain.Shop;
 import org.springframework.data.repository.CrudRepository;
 
-import java.util.List;
+import java.util.Optional;
 
-public interface ShopRepo extends CrudRepository<Shop, Integer> {
+public interface ShopIdRepo extends CrudRepository<Shop, Integer> {
 
 
+  Shop findByAddress (String address);
 
-    List<Shop> findByShopname(String shopname);
+
 }

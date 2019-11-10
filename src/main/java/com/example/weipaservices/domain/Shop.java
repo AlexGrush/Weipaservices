@@ -1,10 +1,12 @@
 package com.example.weipaservices.domain;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 @Table(name = "ShopT")
-public class Shop {
+public class Shop<jijess> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer shop_id;
@@ -13,7 +15,27 @@ public class Shop {
     private String address;
     private boolean electroParkingAvailable;
 
-    public Integer getShop_id() { return shop_id; }
+
+
+    //    @ManyToMany
+//    @JoinTable(
+//            name = "JijeToShop",
+//            joinColumns = {@JoinColumn(name = "shop_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "jije_id")}
+//    )
+//    private Set<Jije> jijes =new HashSet<>();
+//    @OneToMany
+//    private Set<jijess> jijess;
+//
+//    public Integer getShop_id() { return shop_id; }
+//
+//    public Set<jijess> getJijess() {
+//        return jijess;
+//    }
+
+//    public void setJijess(Set<jijess> jijess) {
+//        this.jijess = jijess;
+//    }
 
     public void setShop_id(Integer id) {
         this.shop_id = id;

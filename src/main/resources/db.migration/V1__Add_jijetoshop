@@ -1,0 +1,5 @@
+create table JijeToShop (
+    shop_id int8 not null references ShopT,
+    jije_id int8 not null references JijeT,
+    primary key (shop_id, jije_id)
+)

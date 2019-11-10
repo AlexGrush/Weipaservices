@@ -1,11 +1,10 @@
 package com.example.weipaservices.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.Set;
 
 @Entity
+@Table(name = "JijeT")
 public class Jije {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -14,7 +13,40 @@ public class Jije {
     private String category;
     private String manufacture;
     private boolean hasNicotine;
-    private Long Price;
+    private Integer price;
+
+    public Jije() {
+
+    }
+
+//    public Set<Shop> getShops() {
+//        return shops;
+//    }
+
+//    public void setShops(Set<Shop> shops) {
+//        this.shops = shops;
+//    }
+
+    public Jije(String jijepname, String category, String manufacture, boolean hasNicotine, Integer price) {
+        this.jijepname = jijepname;
+        this.category = category;
+        this.manufacture = manufacture;
+        this.hasNicotine = true;
+        this.price = price;
+    }
+
+//    @ManyToMany
+//    @JoinTable(
+//            name = "JijeToShop",
+//            joinColumns = {@JoinColumn(name = "jije_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "shop_id")}
+//    )
+//    private Set<Shop> shops =new HashSet<>();
+//}
+
+//    @ManyToOne(fetch = FetchType.EAGER)
+//    @JoinColumn(name = "shop_id")
+//    private Shop jije_id;
 
 
     public Integer getJije_id() {
@@ -49,12 +81,12 @@ public class Jije {
         this.hasNicotine = hasNicotine;
     }
 
-    public Long getPrice() {
-        return Price;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setPrice(Long price) {
-        Price = price;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     public String getManufacture() {

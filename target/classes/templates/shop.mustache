@@ -6,19 +6,26 @@
 </head>
 <body>
 <div><form action="/shop" method="post">
-    <input type="text" name="shopname" placeholder="Введите название магазина" />
+    <input type="text" name="shopname" placeholder="Название магазина" />
     <input type="text" name="adress" placeholder="Адресс">
+    <label> Електро парковка : <input type="checkbox" name="electroParkingAvailable"/> </label>
+    <button type="button">Добавить</button>
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-    <button type="submit">Добавить Магазин</button>
+
 </form>
     {{#shops}}
         <div>
             <b>{{shop_id}}</b>
             <span>{{shopname}}</span>
             <span>{{address}}</span>
+            <span>{{electroParkingAvailable}}</span>
+            <form action="/shopeditor" method="get">
+            <input type="hidden" name="address" value="{{address}}" />
+            <button type="submit">Изменить</button>
+            </form>
         </div>
     {{/shops}}
 </div>
-<a href="/shop">Shop page</a>
+<a href="/main">Main page</a>
 </body>
 </html>

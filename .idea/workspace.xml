@@ -2,27 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e98076-8f1b-46fd-9d03-a6a95063c7a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/services/UserServices.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Purchase.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/services/UserServices.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/purshase.mustache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/config/WebSecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Purchase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Purchase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Message.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Role.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shop.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,8 +35,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="HTML File" />
       </list>
     </option>
@@ -56,6 +55,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example" />
@@ -66,6 +66,9 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.weipaservices.repos" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Chudo-Mashina\IdeaProjects\Wservices\src\main\resources\templates" />
     </key>
@@ -124,7 +127,11 @@
       <workItem from="1572945453655" duration="1233000" />
       <workItem from="1572976711414" duration="9999000" />
       <workItem from="1572987903992" duration="1871000" />
-      <workItem from="1573036965980" duration="15102000" />
+      <workItem from="1573036965980" duration="17009000" />
+      <workItem from="1573120803568" duration="9911000" />
+      <workItem from="1573223215063" duration="1250000" />
+      <workItem from="1573313137012" duration="15404000" />
+      <workItem from="1573335099578" duration="723000" />
     </task>
     <servers />
   </component>
@@ -146,21 +153,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java</url>
-          <line>86</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
