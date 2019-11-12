@@ -6,10 +6,10 @@
 </head>
 <body>
 <div><form action="/shop" method="post">
-    <input type="text" name="shopname" placeholder="Название магазина" />
-    <input type="text" name="adress" placeholder="Адресс">
-    <label> Електро парковка : <input type="checkbox" name="electroParkingAvailable"/> </label>
-    <button type="button">Добавить</button>
+    <input type="text" name="shopname" placeholder="Name shop" />
+    <input type="text" name="adress" placeholder="Adress">
+    <label> Electric parking : <input type="checkbox" name="electroParkingAvailable"/> </label>
+    <button type="button">Add</button>
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
 
 </form>
@@ -21,7 +21,7 @@
             <span>{{electroParkingAvailable}}</span>
             <form action="/shopeditor" method="get">
             <input type="hidden" name="address" value="{{address}}" />
-            <button type="submit">Изменить</button>
+            <button type="submit">Edit</button>
             </form>
         </div>
     {{/shops}}

@@ -9,21 +9,27 @@ import java.util.Set;
 public class Shop<jijess> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer shop_id;
+    private Long shop_id;
 
     private String shopname;
     private String address;
     private boolean electroParkingAvailable;
 
+    @ManyToMany
+    @JoinTable(
+            name = "JijeToShop",
+            joinColumns = {@JoinColumn(name = "shop_id")},
+            inverseJoinColumns = {@JoinColumn(name = "jije_id")}
+    )
+    private Set<Jije> jijes =new HashSet<>();
 
+    public Set<Jije> getJijes() {
+        return jijes;
+    }
 
-    //    @ManyToMany
-//    @JoinTable(
-//            name = "JijeToShop",
-//            joinColumns = {@JoinColumn(name = "shop_id")},
-//            inverseJoinColumns = {@JoinColumn(name = "jije_id")}
-//    )
-//    private Set<Jije> jijes =new HashSet<>();
+    public void setJijes(Set<Jije> jijes) {
+        this.jijes = jijes;
+    }
 //    @OneToMany
 //    private Set<jijess> jijess;
 //
@@ -37,7 +43,12 @@ public class Shop<jijess> {
 //        this.jijess = jijess;
 //    }
 
-    public void setShop_id(Integer id) {
+
+    public Long getShop_id() {
+        return shop_id;
+    }
+
+    public void setShop_id(Long id) {
         this.shop_id = id;
     }
 

@@ -2,26 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e98076-8f1b-46fd-9d03-a6a95063c7a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/purshase.mustache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeIdRepo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jijeeditor.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/registration.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/JijeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/JijeRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/ShopRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/ShopRepo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/jije.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jije.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/registration.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/registration.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shop.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/shopdetail.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shopdetail.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -59,7 +60,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/example" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/sarafan-HerokuDeploy" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -105,6 +106,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -132,6 +136,9 @@
       <workItem from="1573223215063" duration="1250000" />
       <workItem from="1573313137012" duration="15404000" />
       <workItem from="1573335099578" duration="723000" />
+      <workItem from="1573386631138" duration="1886000" />
+      <workItem from="1573393274675" duration="8021000" />
+      <workItem from="1573459184216" duration="11887000" />
     </task>
     <servers />
   </component>

@@ -5,6 +5,7 @@ import com.example.weipaservices.domain.Message;
 import com.example.weipaservices.domain.Shop;
 import com.example.weipaservices.domain.User;
 import com.example.weipaservices.repos.JijeRepo;
+import com.example.weipaservices.repos.JijeIdRepo;
 import com.example.weipaservices.repos.MessageRepo;
 import com.example.weipaservices.repos.ShopIdRepo;
 import com.example.weipaservices.repos.ShopRepo;
@@ -16,8 +17,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.servlet.annotation.WebServlet;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 
 @Controller
 @WebServlet("/myservlet")
@@ -28,6 +28,8 @@ public class GreetingController {
     private ShopRepo shopRepo;
     @Autowired
     private JijeRepo jijeRepo;
+    @Autowired
+    private JijeRepo jijeIdRepo;
     @Autowired
     private ShopIdRepo shopIdRepo;
 
@@ -108,7 +110,7 @@ public class GreetingController {
             @RequestParam String category,
             @RequestParam String manufacture,
             @RequestParam boolean hasNicotine,
-            @RequestParam int price,
+            @RequestParam Long price,
             Map<String, Object> model) {
         Jije jije = new Jije(jijepname, category, manufacture, hasNicotine, price);
 
@@ -124,17 +126,86 @@ public class GreetingController {
         Shop shop = shopIdRepo.findByAddress(address);
 //        shopIdRepo.save(shop);
         model.put("shop", shop);
-    return "shopdetail";
+        return "shopdetail";
+    }
+    @GetMapping("/jijeeditor")
+    public String jijeeditor(@RequestParam(required=false,name="category") String category,Map<String, Object> model) {
+        Jije jije = jijeIdRepo.findByCategory(category);
+//        shopIdRepo.save(shop);
+        model.put("jije", jije);
+        return "jijeeditor";
     }
 
+    @PostMapping ("/save")
+    public String saveShop(
+            @RequestParam Long shop_id,
+            @RequestParam String shopname,
+            @RequestParam String address,
+            @RequestParam boolean electroParkingAvailable,
+            Map<String, Object> model) {
 
-    // Shop by ID
+
+        Shop shop = shopRepo.findById(shop_id).get();
+        shop.setShopname(shopname);
+        shop.setAddress(address);
+        shop.setElectroParkingAvailable(electroParkingAvailable);
+
+//        Jije  jije = new Jije( "trava", "fruktovaya", "Egipet", true , 150);
+//        Set<Jije> jijes = shop.getJijes();
+//        jijes.add(jije);
+//        shop.setJijes(jijes);
+        shopRepo.save(shop);
+        return "shopdetail";
+    }
+    @PostMapping ("/delete")
+    public String saveShop(
+            @RequestParam Long shop_id,
+            Map<String, Object> model) {
+
+        Shop shop = shopRepo.findById(shop_id).get();
+
+        shopRepo.delete(shop);
+
+        return "shopdetail";
+    }
+    @PostMapping ("/deletejije")
+    public String saveJije(
+            @RequestParam Long jije_id,
+            Map<String, Object> model) {
+
+        Jije jije = jijeRepo.findById(jije_id).get();
+
+        jijeRepo.delete(jije);
+
+        return "jijeeditor";
+    }
+    @PostMapping ("/savejije")
+    public String saveJije(
+            @RequestParam Long jije_id,
+            @RequestParam String jijepname,
+            @RequestParam String category,
+            @RequestParam String manufacture,
+            @RequestParam boolean hasNicotine,
+            @RequestParam Long price,
+            Map<String, Object> model) {
+
+
+        Jije jije = jijeRepo.findById(jije_id).get();
+        jije.setJijepname(jijepname);
+        jije.setCategory(category);
+        jije.setHasNicotine(hasNicotine);
+
+        jijeRepo.save(jije);
+        return "jijeeditor";
+    }
+
+//     Shop by ID
 //    @GetMapping("/shop")
 //    public Shop shop(@RequestParam String id) {
 //
 //        return Shop;
 //    }
-//
+
 //    @PostMapping("/shop")
 //    public Shop shop(@RequestParam String id) {
 //

@@ -6,14 +6,14 @@
 </head>
 <body>
 <div><form action="/jije" method="post">
-    <input type="text" name="jijepname" placeholder="Hазвание жижи" />
-    <input type="text" name="category" placeholder="Категории">
-    <input type="text" name="manufacture" placeholder="Производитель">
-    <input type="number" name="price" placeholder="Цена">
-    <label> Наличие никотина : <input type="checkbox"  name="hasNicotine"/> </label>
+    <input type="text" name="jijepname" placeholder="Name jije" />
+    <input type="text" name="category" placeholder="Category">
+    <input type="text" name="manufacture" placeholder="Manufacture">
+    <input type="number" name="price" placeholder="Price">
+    <label> Has nicotine : <input type="checkbox"  name="hasNicotine"/> </label>
 
     <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
-    <button type="submit">Добавить</button>
+    <button type="submit">Add</button>
 
 </form>
     {{#jijes}}
@@ -24,6 +24,9 @@
             <span>{{manufacture}}</span>
             <span><{{price}}</span>
             <span>{{hasNicotine}}</span>
+            <form action="/jijeeditor" method="get">
+                <input type="hidden" name="category" value="{{category}}" />
+                <button type="submit">Edit</button>
             </form>
         </div>
     {{/jijes}}

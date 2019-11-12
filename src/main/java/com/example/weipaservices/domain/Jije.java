@@ -1,6 +1,7 @@
 package com.example.weipaservices.domain;
 
 import javax.persistence.*;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -8,12 +9,12 @@ import java.util.Set;
 public class Jije {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer jije_id;
+    private Long jije_id;
     private String jijepname;
     private String category;
     private String manufacture;
     private boolean hasNicotine;
-    private Integer price;
+    private Long price;
 
     public Jije() {
 
@@ -27,7 +28,7 @@ public class Jije {
 //        this.shops = shops;
 //    }
 
-    public Jije(String jijepname, String category, String manufacture, boolean hasNicotine, Integer price) {
+    public Jije(String jijepname, String category, String manufacture, boolean hasNicotine, Long price) {
         this.jijepname = jijepname;
         this.category = category;
         this.manufacture = manufacture;
@@ -35,25 +36,33 @@ public class Jije {
         this.price = price;
     }
 
-//    @ManyToMany
-//    @JoinTable(
-//            name = "JijeToShop",
-//            joinColumns = {@JoinColumn(name = "jije_id")},
-//            inverseJoinColumns = {@JoinColumn(name = "shop_id")}
-//    )
-//    private Set<Shop> shops =new HashSet<>();
-//}
+    @ManyToMany
+    @JoinTable(
+            name = "JijeToShop",
+            joinColumns = {@JoinColumn(name = "jije_id")},
+            inverseJoinColumns = {@JoinColumn(name = "shop_id")}
+    )
+    private Set<Shop> shops =new HashSet<>();
+
 
 //    @ManyToOne(fetch = FetchType.EAGER)
 //    @JoinColumn(name = "shop_id")
 //    private Shop jije_id;
 
 
-    public Integer getJije_id() {
+    public Set<Shop> getShops() {
+        return shops;
+    }
+
+    public void setShops(Set<Shop> shops) {
+        this.shops = shops;
+    }
+
+    public Long getJije_id() {
         return jije_id;
     }
 
-    public void setJije_id(Integer jije_id) {
+    public void setJije_id(Long jije_id) {
         this.jije_id = jije_id;
     }
 
@@ -81,11 +90,11 @@ public class Jije {
         this.hasNicotine = hasNicotine;
     }
 
-    public Integer getPrice() {
+    public Long getPrice() {
         return price;
     }
 
-    public void setPrice(Integer price) {
+    public void setPrice(Long price) {
         this.price = price;
     }
 

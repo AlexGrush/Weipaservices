@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div>
+    {{#jije}}
+    <div>
+        <b>{{jije_id}}</b>
+        <span>{{hasNicotine}}</span>
+        <form action="savejije" method="post"  >
+            <input type="hidden" name="jije_id" value="{{jije_id}}" />
+            <label>Jije name :</label>
+            <input type="text" name="jijepname" value="{{jijepname}}"  />
+            <label>Jije category :</label>
+            <input type="text" name="category" value="{{category}}" />
+            <label>Jije manufacture :</label>
+            <input type="text" name="manufacture" value="{{manufacture}}" />
+            <input type="hidden" name="hasNicotine" value="{{hasNicotine}}" />
+            <label>Jije price :</label>
+            <input type="number" name="price" value="{{price}}" />
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+            <button type="submit">Save</button>
+        </form>
+    </div>
+        <form action="deletejije" method="post"  >
+            <input type="hidden" name="jije_id" value="{{jije_id}}" />
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+            <label>Delete this jije :</label>
+            <button type="submit">Delete</button>
+        </form>
+    {{/jije}}
+</div>
+<a href="/jije">Jijes page</a>
+</body>
+</html>

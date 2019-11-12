@@ -8,11 +8,26 @@
 <div>
     {{#shop}}
         <div>
+            <label>Shop id :</label>
             <b>{{shop_id}}</b>
-            <span>{{shopname}}</span>
-            <span>{{address}}</span>
-            <span>{{electroParkingAvailable}}</span>
+<!--            <span>{{electroParkingAvailable}}</span>-->
+        <form action="save" method="post"  >
+            <input type="hidden" name="shop_id" value="{{shop_id}}" />
+            <label>Shop name :</label>
+            <input type="text" name="shopname" value="{{shopname}}"  />
+            <label>Shop address :</label>
+            <input type="text" name="address" value="{{address}}" />
+            <input type="hidden" name="electroParkingAvailable" value="{{electroParkingAvailable}}" />
+            <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+            <button type="submit">Save</button>
+        </form>
         </div>
+    <form action="delete" method="post"  >
+        <input type="hidden" name="shop_id" value="{{shop_id}}" />
+        <input type="hidden" name="_csrf" value="{{_csrf.token}}" />
+        <label>Delete this shop :</label>
+        <button type="submit">Delete</button>
+    </form>
     {{/shop}}
 </div>
 <a href="/shop">Shops page</a>
