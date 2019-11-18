@@ -96,7 +96,7 @@ public class GreetingController {
             @RequestParam String shopname,
             @RequestParam String adress, Map<String, Object> model) {
         Shop shop = new Shop(shopname, adress);
-
+//safsaf
         shopRepo.save(shop);
 
         Iterable<Shop> shops = shopRepo.findAll();
@@ -104,13 +104,28 @@ public class GreetingController {
 
         return "shop";
     }
+//    @PostMapping("/purchase")
+//    public String addPurchase(
+//            @RequestParam Integer purchase_id ,
+//            @RequestParam Integer jije_id ,
+//            @RequestParam Integer shop_id ,
+//            @RequestParam Integer generalprice, Map<String, Object> model) {
+//        Purchase purchase = new Purchase(purchase_id, shop_id);
+//
+//        shopRepo.save(shop);
+//
+//        Iterable<Shop> shops = shopRepo.findAll();
+//        model.put("shops", shops);
+//
+//        return "shop";
+//    }
     @PostMapping("/jije")
     public String addJije(
             @RequestParam String jijepname,
             @RequestParam String category,
             @RequestParam String manufacture,
             @RequestParam boolean hasNicotine,
-            @RequestParam Long price,
+            @RequestParam Integer price,
             Map<String, Object> model) {
         Jije jije = new Jije(jijepname, category, manufacture, hasNicotine, price);
 
@@ -122,8 +137,9 @@ public class GreetingController {
         return "jije";
     }
     @GetMapping("/shopeditor")
-    public String shopeditor(@RequestParam(required=false,name="address") String address,Map<String, Object> model) {
-        Shop shop = shopIdRepo.findByAddress(address);
+    public String shopeditor(@RequestParam(required=false,name="shopid") String shopid,Map<String, Object> model) {
+       Shop shop = shopRepo.findByShopid(Long.valueOf(shopid));
+       Long.valueOf(shopid);
 //        shopIdRepo.save(shop);
         model.put("shop", shop);
         return "shopdetail";
@@ -138,14 +154,14 @@ public class GreetingController {
 
     @PostMapping ("/save")
     public String saveShop(
-            @RequestParam Long shop_id,
+            @RequestParam Long shopid,
             @RequestParam String shopname,
             @RequestParam String address,
             @RequestParam boolean electroParkingAvailable,
             Map<String, Object> model) {
 
 
-        Shop shop = shopRepo.findById(shop_id).get();
+        Shop shop = shopRepo.findById(shopid).get();
         shop.setShopname(shopname);
         shop.setAddress(address);
         shop.setElectroParkingAvailable(electroParkingAvailable);
@@ -159,10 +175,10 @@ public class GreetingController {
     }
     @PostMapping ("/delete")
     public String saveShop(
-            @RequestParam Long shop_id,
+            @RequestParam Long shopid,
             Map<String, Object> model) {
 
-        Shop shop = shopRepo.findById(shop_id).get();
+        Shop shop = shopRepo.findById(shopid).get();
 
         shopRepo.delete(shop);
 
@@ -186,7 +202,7 @@ public class GreetingController {
             @RequestParam String category,
             @RequestParam String manufacture,
             @RequestParam boolean hasNicotine,
-            @RequestParam Long price,
+            @RequestParam Integer price,
             Map<String, Object> model) {
 
 

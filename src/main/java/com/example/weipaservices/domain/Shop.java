@@ -2,6 +2,7 @@ package com.example.weipaservices.domain;
 
 import javax.persistence.*;
 import java.util.HashSet;
+import java.util.HashSet;
 import java.util.Set;
 
 @Entity
@@ -9,7 +10,7 @@ import java.util.Set;
 public class Shop<jijess> {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long shop_id;
+    private Long shopid;
 
     private String shopname;
     private String address;
@@ -45,11 +46,11 @@ public class Shop<jijess> {
 
 
     public Long getShop_id() {
-        return shop_id;
+        return shopid;
     }
 
     public void setShop_id(Long id) {
-        this.shop_id = id;
+        this.shopid = id;
     }
 
     public String getShopname() {

@@ -9,12 +9,12 @@ import java.util.Set;
 public class Jije {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long jije_id;
+    private Integer jije_id;
     private String jijepname;
     private String category;
     private String manufacture;
     private boolean hasNicotine;
-    private Long price;
+    private Integer price;
 
     public Jije() {
 
@@ -28,7 +28,7 @@ public class Jije {
 //        this.shops = shops;
 //    }
 
-    public Jije(String jijepname, String category, String manufacture, boolean hasNicotine, Long price) {
+    public Jije(String jijepname, String category, String manufacture, boolean hasNicotine, Integer price) {
         this.jijepname = jijepname;
         this.category = category;
         this.manufacture = manufacture;
@@ -58,11 +58,11 @@ public class Jije {
         this.shops = shops;
     }
 
-    public Long getJije_id() {
+    public Integer getJije_id() {
         return jije_id;
     }
 
-    public void setJije_id(Long jije_id) {
+    public void setJije_id(Integer jije_id) {
         this.jije_id = jije_id;
     }
 
@@ -90,11 +90,11 @@ public class Jije {
         this.hasNicotine = hasNicotine;
     }
 
-    public Long getPrice() {
+    public Integer getPrice() {
         return price;
     }
 
-    public void setPrice(Long price) {
+    public void setPrice(Integer price) {
         this.price = price;
     }
 

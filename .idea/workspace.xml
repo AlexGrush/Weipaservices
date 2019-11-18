@@ -2,27 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1e98076-8f1b-46fd-9d03-a6a95063c7a0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeIdRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/jijeeditor.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/controller/GreetingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Jije.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/domain/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/JijeRepo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/weipaservices/repos/ShopRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jije.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/main.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/jijeeditor.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/jijeeditor.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shop.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/shopdetail.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/controller/GreetingController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Jije.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/domain/Shop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/JijeRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/JijeRepo.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/ShopRepo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/weipaservices/repos/ShopRepo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/jije.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jije.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/main.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/main.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/shop.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shop.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/shopdetail.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/shopdetail.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/jijeeditor.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/jijeeditor.mustache" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +131,11 @@
       <workItem from="1573386631138" duration="1886000" />
       <workItem from="1573393274675" duration="8021000" />
       <workItem from="1573459184216" duration="11887000" />
+      <workItem from="1573662812553" duration="4591000" />
+      <workItem from="1573747182681" duration="3696000" />
+      <workItem from="1573835535617" duration="1187000" />
+      <workItem from="1573991766223" duration="4124000" />
+      <workItem from="1574077571986" duration="2246000" />
     </task>
     <servers />
   </component>

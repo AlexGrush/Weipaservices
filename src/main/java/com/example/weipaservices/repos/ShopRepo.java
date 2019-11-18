@@ -9,6 +9,6 @@ import java.util.Optional;
 public interface ShopRepo extends CrudRepository<Shop, Long> {
 
 
-    Optional<Shop> findById(Long id);
+    Shop findByShopid(Long shopid);
     List<Shop> findByShopname(String shopname);
 }

@@ -15,12 +15,12 @@
 </form>
     {{#shops}}
         <div>
-            <b>{{shop_id}}</b>
+            <b>{{shopid}}</b>
             <span>{{shopname}}</span>
             <span>{{address}}</span>
             <span>{{electroParkingAvailable}}</span>
             <form action="/shopeditor" method="get">
-            <input type="hidden" name="address" value="{{address}}" />
+            <input type="hidden" name="shopid" value="{{shopid}}" />
             <button type="submit">Edit</button>
             </form>
         </div>
